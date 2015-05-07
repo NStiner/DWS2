@@ -1,0 +1,304 @@
+/*-----StyleSheet for Project 1 -  DWS2 ---------*/
+
+/*-------Main Styling-------*/
+html {
+    height: 100%;
+    background-color: #90060d;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    font: 1em/150% "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: #fff;
+}
+
+body {
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+#wrapper {
+    width: 91.666666666666%;
+    margin: 0 4.166666666667% 0 4.166666666667%;
+}
+
+img {
+    max-width: 100%;
+}
+
+p, #navigation li {
+    color: #ffffff;
+    font-family: Tahoma, Times, serif;
+    font-size: 14px;
+    margin: 23px 10px;
+    text-align: center;
+}
+
+/*-------Headings-------*/
+h1 {
+    color: #ffffff;
+    background-color: #e0370a;
+    background-position: 50px 0;
+    background-size: 10% 100%;
+    font-weight: 900;
+    font-family: lobster, helvetta, sans-serif;
+    font-size: 3em;
+    height: 30px;
+    padding: 10px;
+    margin: 20px;
+    text-align: center;
+    text-decoration: underline;
+    border: 2px solid #000000;
+    box-shadow: 6px 6px #000000;
+}
+
+h2 {
+    color: #ffeace;
+    background-color: #e0370a;
+    height: 30px;
+    padding: 10px;
+    margin: 20px;
+    font-family: courier, monospace;
+    text-transform: uppercase;
+    font-size: 2.7em;
+    border: 1px solid #000000;
+    box-shadow: 4px 4px #000000;
+    text-align: center;
+}
+
+h3 {
+    background-color: #e0370a;
+    color: #ffeace;
+    height: 20px;
+    padding: 5px;
+    margin: 23px;
+    font-family: Lucida Console, monospace;
+    text-shadow: 2px 2px #000000;
+    font-style: italic;
+    font-size: 2.1em;
+    text-align: center;
+}
+
+
+/*-------Navigation-------*/
+#nav {
+    float: left;
+    width: 25%;
+    height: 150px;
+    background-color: #999;
+    margin-bottom: 10px;
+}
+
+#navigation {
+    list-style: none;
+    margin: 2px 65px;
+    padding: 5px;
+    font-size: 80%;
+    font-family: verdana, georgia, serif;
+    text-align: right;
+}
+
+#navigation li {
+    display: inline;
+    width: 500px;
+    height: 10px;
+}
+
+nav li:nth-child() a{
+    color: #FF6800;
+    background: #ffffff;
+    padding: 5px;
+    border-radius: 3px;
+}
+
+#subnavigation {
+    list-style: none;
+    margin: 0px;
+    padding: 10px;
+    font-size: 120%;
+    font-family: Arial Narrow, monospace;
+    text-align: center;
+}
+
+#subnavigation li {
+    display: inline;
+    width: 600px;
+    height: 10px;
+}
+
+/*-------List Styles-------*/
+ul {
+    list-style-type: none;
+    text-align: left;
+}
+
+strong {
+    text-decoration: underline;
+}
+
+/*-------Links-------*/
+a:link {
+    color: #7DB3F2;
+    text-decoration: none;
+}
+
+a:visited {
+    color: #f29d2c;
+}
+
+a:hover {
+    color: #F25F92;
+    text-decoration: underline;
+    background-color: #eee8ea;
+}
+
+a:active {
+    color: #F25E57;
+}
+
+/*-------Images-------*/
+#main {
+    text-align: center;
+}
+
+
+#break, #chicken, #burgers {
+    text-align: left;
+}
+
+#salads, #sides, #drinks {
+    text-align: right;
+}
+
+
+
+/*-------layout styling-------*/
+#hoursd, #specialoffersd {
+    float: left;
+    width: 450px;
+    margin: 10px;
+    overflow: auto;
+}
+
+#menud {
+    clear: left;
+}
+
+aside div:last-child {
+    font-style: italic;
+    letter-spacing: 1px;
+}
+
+h1 > h2 {
+    letter-spacing: 1px;
+}
+
+/*-------Media Queries-------*/
+
+/*--Tablets(landscape)--*/
+@media (max-width: 1024px) {
+    section {
+        float: none;
+        width: 100%;
+    }
+
+    aside {
+        float: none;
+        width: 100%;
+        text-align: left;
+    }
+
+    .asideImages {
+        float: left;
+    }
+
+    div.asideImages:nth-child(n+1) {
+        margin-right: 2em;
+    }
+}
+/*--Tablets(portrait)--*/
+@media (max-width: 820px) {
+    section {
+        float: none;
+        width: 100%;
+    }
+
+    aside {
+        float: none;
+        width: 100%;
+        text-align: left;
+    }
+
+    .asideImages {
+        float: left;
+    }
+
+    div.asideImages:nth-child(n+1) {
+        margin-right: .6em;
+    }
+}
+
+/*--SmartPhones(landscape)--*/
+@media (max-width: 767px) {
+    h1 {
+        float: none;
+        font-size: 2.5em;
+    }
+
+    nav {
+        float: none;
+        margin-top: 20px;
+    }
+
+    nav li {
+        margin: 0 .9em 20px 0;
+    }
+
+    section {
+        float: none;
+        width: 100%;
+    }
+
+    aside {
+        float: none;
+        width: 100%;
+        text-align: left;
+    }
+
+    .asideImages {
+        float: left;
+    }
+
+    div.asideImages:nth-child(odd) {
+        margin-right: 3em;
+    }
+}
+
+/*--SmartPhones(portrait)--*/
+@media (max-width: 320px) {
+    h1 {
+        float: none;
+        font-size: 2.5em;
+    }
+
+    nav {
+        float: none;
+        margin-top: 20px;
+    }
+
+    nav li {
+        margin: 0 .9em 20px 0;
+    }
+
+    section {
+        float: none;
+        width: 100%;
+    }
+
+    aside {
+        float: none;
+        width: 100%;
+        text-align: center;
+    }
+}
+
