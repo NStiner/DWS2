@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Application Form </title>
+    <link rel="stylesheet" type="text/css" href="../wk3_Stiner/_css/style.css">
+</head>
+<body>
+    <div id="wrapper">
+    <header>
+        <h1 id="top">TurboTech Industries</h1>
+    </header>
+    </div>
+    <div id="mainInfo">
+        <form class="applicationForm" action="#">
+            <fieldset title="About You">
+                <legend>Tell us about yourself!</legend>
+                <label for="firstName">First Name*</label>
+                <input type="text" id="firstName"  required><br><br>
+                <label for="middleInitial">Middle Initial</label>
+                <input type="text" id="middleInitial" size="5"><br><br>
+                <label for="lastName">Last Name*</label>
+                <input type="text" id="lastName" required><br><br>
+                <label for="birthday">Birthday*</label>
+                <input type="date" id="birthday" required><br><br>
+                <label for="primaryPhone">Primary Phone Number*</label>
+                <input type="tel" id="primaryPhone" placeholder="555-555-5555"  required><br><br>
+                <label for="secondaryPhone">Secondary Phone Number*</label>
+                <input type="tel" id="secondaryPhone" placeholder="555-555-5555" required><br><br>
+                <label for="address1">Address 1</label>
+                <input type="text" id="address1" size="70" required><br><br>
+                <label for="address2">Address 2</label>
+                <input type="text" id="address2" size="70"><br><br>
+                <label for="city">City*</label>
+                <input type="text" id="city" size="30" required><br><br>
+                <label for="stateProvince">State/Province</label>
+                <select id="stateProvince">
+                    <option value="AL">Alabama</option>
+                    <option value="AK">Alaska</option>
+                    <option value="AZ">Arizona</option>
+                    <option value="AR">Arkansas</option>
+                    <option value="CA">California</option>
+                    <option value="CO">Colorado</option>
+                    <option value="CT">Connecticut</option>
+                    <option value="DE">Delaware</option>
+                    <option value="DC">District Of Columbia</option>
+                    <option value="FL">Florida</option>
+                    <option value="GA">Georgia</option>
+                    <option value="HI">Hawaii</option>
+                    <option value="ID">Idaho</option>
+                    <option value="IL">Illinois</option>
+                    <option value="IN">Indiana</option>
+                    <option value="IA">Iowa</option>
+                    <option value="KS">Kansas</option>
+                    <option value="KY">Kentucky</option>
+                    <option value="LA">Louisiana</option>
+                    <option value="ME">Maine</option>
+                    <option value="MD">Maryland</option>
+                    <option value="MA">Massachusetts</option>
+                    <option value="MI">Michigan</option>
+                    <option value="MN">Minnesota</option>
+                    <option value="MS">Mississippi</option>
+                    <option value="MO">Missouri</option>
+                    <option value="MT">Montana</option>
+                    <option value="NE">Nebraska</option>
+                    <option value="NV">Nevada</option>
+                    <option value="NH">New Hampshire</option>
+                    <option value="NJ">New Jersey</option>
+                    <option value="NM">New Mexico</option>
+                    <option value="NY">New York</option>
+                    <option value="NC">North Carolina</option>
+                    <option value="ND">North Dakota</option>
+                    <option value="OH">Ohio</option>
+                    <option value="OK">Oklahoma</option>
+                    <option value="OR">Oregon</option>
+                    <option value="PA">Pennsylvania</option>
+                    <option value="RI">Rhodes Island</option>
+                    <option value="SC">South Carolina</option>
+                    <option value="SD">South Dakota</option>
+                    <option value="TN">Tennessee</option>
+                    <option value="TX">Texas</option>
+                    <option value="UT">Utah</option>
+                    <option value="VT">Vermont</option>
+                    <option value="VA">Virginia</option>
+                    <option value="WA">Washington</option>
+                    <option value="WV">West Virginia</option>
+                    <option value="WI">Wisconsin</option>
+                    <option value="WY">Wyoming</option>
+                    <option value="OT">Other</option>
+                </select><br><br>
+                <label for="zipCode">Zip Code*</label>
+                <input type="text" id="zipCode" required><br><br>
+                <label for="email">E-Mail*</label>
+                <input type="text" id="email" size="50" required><br><br>
+                <label for="checkY">Are you a qualified web designer or developer?</label>
+                <input type="radio" id="checkY" value="Yes" name="radio1" checked="checked"> Yes
+                <input type="radio" id="checkN" value="No" name="radio1" > No
+            </fieldset><br><br>
+
+            <fieldset title="Questionnaire">
+                <legend>Questions About You!</legend>
+                <div class="questions">
+                    <label for="question1">What hobbies and/or interest do you have?</label><br>
+                    <textarea id="question1"></textarea><br><br>
+                    <label for="question2">What Skills do you have?</label><br>
+                    <textarea id="question2"></textarea><br><br>
+                    <label for="question3">What made you interested in this job?</label><br>
+                    <textarea id="question3"></textarea><br><br>
+                </div>
+            </fieldset>
+
+            <fieldset title="Employment History">
+                <legend>Employment History</legend>
+                <div class="employer1">
+                    <h3>Employer 1</h3>
+                    <label for="employer1">Employer Name</label>
+                    <input type="text" id="employer1" size="50"><br><br>
+                    <label for="employerNumb1">Employer Phone Number</label>
+                    <input type="tel" id="employerNumb1" placeholder="555-555-5555"><br><br>
+                    <label for="jobDesc1">Job Description</label>
+                    <input type="text" id="jobDesc1" size="50"><br><br>
+                    <label for="startDate1">Start Date</label>
+                    <input type="date" id="startDate1" class="datetime"><br><br>
+                    <label for="endDate1">End Date</label>
+                    <input type="date" id="endDate1" class="datetime"><br><br>
+                    <label for="currentEmp1">Current Employer</label>
+                    <input type="currentEmp1" id="currentEmp1">
+                    <input type="checkbox" name="option1" value="Current Employer1" >
+                </div><br><br>
+
+                <div class="employer2">
+                    <h3>Employer 2</h3>
+                    <label for="employer2">Employer Name</label>
+                    <input type="text" id="employer2" size="50"><br><br>
+                    <label for="employerNumb2">Employer Phone Number</label>
+                    <input type="tel" id="employerNumb2" placeholder="555-555-5555"><br><br>
+                    <label for="jobDesc2">Job Description</label>
+                    <input type="text" id="jobDesc2" size="50"><br><br>
+                    <label for="startDate2">Start Date</label>
+                    <input type="date" id="startDate2" class="datetime"><br><br>
+                    <label for="endDate2">End Date</label>
+                    <input type="date" id="endDate2" class="datetime"><br><br>
+                    <label for="currentEmp2">Current Employer</label>
+                    <input type="text" id="currentEmp2">
+                    <input type="checkbox" name="option1" value="Current Employer2" >
+                </div>
+            </fieldset>
+
+            <fieldset title="Resume">
+                <legend>Resume</legend>
+                <label for="uploadRes">Upload Your Resume Here:</label>
+                <input type="file" id="uploadRes" name="datafile" size="50"><br><Br>
+                <label for="pasteRes">Paste Your Resume Here:</label><br>
+                <textarea id="pasteRes" size="100, 50"></textarea><br><br>
+                <label for="uploadRes">Projects/Work for us to sample:</label>
+                <input type="file" id="uploadWork" name="datafile" size="50"><br><Br>
+            </fieldset>
+
+            <input type="submit" name="submit" id="submit" value="Submit" tabindex="90">
+            <div class="clear">
+            </div>
+        </form>
+
+        <a href="#top">Top of Page</a><br>
+
+<!--Footer-->
+<footer>
+    &copy; Nicole Stiner 2015
+</footer>
+</div>
+</body>
+</html>
